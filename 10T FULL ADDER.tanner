@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design {10T FULL ADDER} -cell Cell0 -type schematic -newwindow
+window move -left 22 -top -21 -width 1339 -height 462 -undock -max 
+window fit -x0 -2663 -y0 -3954 -x1 7857 -y1 1451 -units iu
+workspace dockinglayout load -file dockinglayout.xml
+source open.design -relativeto user -encoding utf-8
+source open.design -relativeto design -encoding utf-8

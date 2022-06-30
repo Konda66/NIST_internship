@@ -1,5 +1,5 @@
 (edif
-	(rename &14t_SPACE_full_SPACE_adder "14t full adder")
+	(rename &10T_SPACE_FULL_SPACE_ADDER "10T FULL ADDER")
 	(edifVersion 2 0 0)
 	(edifLevel 0)
 	(keywordMap
@@ -7,7 +7,7 @@
 	)
 	(status
 		(written
-			(timeStamp 2021 07 27 11 30 37)
+			(timeStamp 2021 07 24 08 56 49)
 			(author "Hemanth")
 			(program "Tanner EDA S-Edit"
 				(version "16.30 build 9172")
@@ -142,7 +142,7 @@
 		)
 	)
 	(library
-		(rename &14t_SPACE_full_SPACE_adder "14t full adder")
+		(rename &10T_SPACE_FULL_SPACE_ADDER "10T FULL ADDER")
 		(edifLevel 0)
 		(technology
 			(numberDefinition
@@ -258,7 +258,7 @@
 					(port sum
 						(direction OUTPUT)
 					)
-					(port cout
+					(port carry
 						(direction OUTPUT)
 					)
 				)
@@ -272,34 +272,34 @@
 				)
 				(status
 					(written
-						(timeStamp 2021 07 27 11 30 27)
+						(timeStamp 2021 07 24 08 30 42)
 					)
 				)
 				(contents
 					(page Page0
 						(portImplementation
-							(name cout
+							(name bin
 								(display
 									(figureGroupOverride pin
 										(textHeight 111)
 									)
-									(justify CENTERLEFT)
+									(justify CENTERRIGHT)
 									(origin
-										(pt 5300 -3600)
+										(pt -700 -200)
 									)
 								)
 							)
 							(connectLocation
 								(figure portshape
 									(dot
-										(pt 5300 -3600)
+										(pt -700 -200)
 									)
 								)
 							)
 							(figure portshape
 								(rectangle
-									(pt 5296 -3604)
-									(pt 5304 -3596)
+									(pt -704 -204)
+									(pt -696 -196)
 								)
 							)
 						)
@@ -311,21 +311,21 @@
 									)
 									(justify CENTERLEFT)
 									(origin
-										(pt 2400 -900)
+										(pt 3600 -500)
 									)
 								)
 							)
 							(connectLocation
 								(figure portshape
 									(dot
-										(pt 2400 -900)
+										(pt 3600 -500)
 									)
 								)
 							)
 							(figure portshape
 								(rectangle
-									(pt 2396 -904)
-									(pt 2404 -896)
+									(pt 3596 -504)
+									(pt 3604 -496)
 								)
 							)
 						)
@@ -337,21 +337,21 @@
 									)
 									(justify CENTERRIGHT)
 									(origin
-										(pt 1700 -600)
+										(pt 2700 0)
 									)
 								)
 							)
 							(connectLocation
 								(figure portshape
 									(dot
-										(pt 1700 -600)
+										(pt 2700 0)
 									)
 								)
 							)
 							(figure portshape
 								(rectangle
-									(pt 1696 -604)
-									(pt 1704 -596)
+									(pt 2696 -4)
+									(pt 2704 4)
 								)
 							)
 						)
@@ -363,47 +363,47 @@
 									)
 									(justify CENTERRIGHT)
 									(origin
-										(pt -600 -500)
+										(pt 700 -100)
 									)
 								)
 							)
 							(connectLocation
 								(figure portshape
 									(dot
-										(pt -600 -500)
+										(pt 700 -100)
 									)
 								)
 							)
 							(figure portshape
 								(rectangle
-									(pt -604 -504)
-									(pt -596 -496)
+									(pt 696 -104)
+									(pt 704 -96)
 								)
 							)
 						)
 						(portImplementation
-							(name bin
+							(name carry
 								(display
 									(figureGroupOverride pin
 										(textHeight 111)
 									)
-									(justify CENTERRIGHT)
+									(justify CENTERLEFT)
 									(origin
-										(pt -1900 -700)
+										(pt 2800 -2600)
 									)
 								)
 							)
 							(connectLocation
 								(figure portshape
 									(dot
-										(pt -1900 -700)
+										(pt 2800 -2600)
 									)
 								)
 							)
 							(figure portshape
 								(rectangle
-									(pt -1904 -704)
-									(pt -1896 -696)
+									(pt 2796 -2604)
+									(pt 2804 -2596)
 								)
 							)
 						)
@@ -415,7 +415,7 @@
 							)
 							(transform
 								(origin
-									(pt -1600 -1400)
+									(pt -700 -900)
 								)
 							)
 						)
@@ -427,7 +427,7 @@
 							)
 							(transform
 								(origin
-									(pt 200 -1400)
+									(pt 1000 -900)
 								)
 							)
 						)
@@ -439,7 +439,7 @@
 							)
 							(transform
 								(origin
-									(pt 1800 -1400)
+									(pt 3000 -900)
 								)
 							)
 						)
@@ -451,7 +451,7 @@
 							)
 							(transform
 								(origin
-									(pt 3600 -1400)
+									(pt 5200 -900)
 								)
 							)
 						)
@@ -463,31 +463,7 @@
 							)
 							(transform
 								(origin
-									(pt -100 -4100)
-								)
-							)
-						)
-						(instance Mn6
-							(viewRef NMOS25_3T
-								(cellRef NMOS_2_5v
-									(libraryRef Generic_250nm_Devices)
-								)
-							)
-							(transform
-								(origin
-									(pt 2100 -4100)
-								)
-							)
-						)
-						(instance Mn7
-							(viewRef NMOS25_3T
-								(cellRef NMOS_2_5v
-									(libraryRef Generic_250nm_Devices)
-								)
-							)
-							(transform
-								(origin
-									(pt 4200 -4100)
+									(pt 2200 -3100)
 								)
 							)
 						)
@@ -499,7 +475,7 @@
 							)
 							(transform
 								(origin
-									(pt -1600 -300)
+									(pt -700 200)
 								)
 							)
 						)
@@ -511,7 +487,7 @@
 							)
 							(transform
 								(origin
-									(pt 200 -300)
+									(pt 1000 200)
 								)
 							)
 						)
@@ -523,7 +499,7 @@
 							)
 							(transform
 								(origin
-									(pt 1800 -300)
+									(pt 3000 200)
 								)
 							)
 						)
@@ -535,7 +511,7 @@
 							)
 							(transform
 								(origin
-									(pt 3600 -300)
+									(pt 5200 200)
 								)
 							)
 						)
@@ -547,31 +523,7 @@
 							)
 							(transform
 								(origin
-									(pt -100 -3100)
-								)
-							)
-						)
-						(instance Mp6
-							(viewRef PMOS25_3T
-								(cellRef PMOS_2_5v
-									(libraryRef Generic_250nm_Devices)
-								)
-							)
-							(transform
-								(origin
-									(pt 2100 -3100)
-								)
-							)
-						)
-						(instance Mp7
-							(viewRef PMOS25_3T
-								(cellRef PMOS_2_5v
-									(libraryRef Generic_250nm_Devices)
-								)
-							)
-							(transform
-								(origin
-									(pt 4200 -3100)
+									(pt 2200 -2000)
 								)
 							)
 						)
@@ -583,7 +535,7 @@
 							)
 							(transform
 								(origin
-									(pt 2200 -1900)
+									(pt 4400 -1400)
 								)
 							)
 						)
@@ -595,7 +547,7 @@
 							)
 							(transform
 								(origin
-									(pt 2000 700)
+									(pt 3600 1100)
 								)
 							)
 						)
@@ -610,50 +562,30 @@
 								(portRef S
 									(instanceRef Mn4)
 								)
-								(portRef S
-									(instanceRef Mn5)
-								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 4000 -1700)
-										(pt 4000 -1800)
-										(pt 2200 -1800)
+										(pt 4400 -1400)
+										(pt 4400 -1300)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 2200 -1900)
-										(pt 2200 -1800)
+										(pt 4400 -1300)
+										(pt 1400 -1300)
+										(pt 1400 -1200)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 2200 -1800)
-										(pt 900 -1800)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 900 -1800)
-										(pt 600 -1800)
-										(pt 600 -1700)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 900 -1800)
-										(pt 900 -4400)
-										(pt 300 -4400)
+										(pt 5600 -1200)
+										(pt 5600 -1300)
+										(pt 4400 -1300)
 									)
 								)
 							)
@@ -673,156 +605,33 @@
 							(figure wire
 								(path
 									(pointList
-										(pt 600 -600)
-										(pt 600 -900)
+										(pt 1400 -100)
+										(pt 1400 -400)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 600 -900)
-										(pt 600 -1100)
+										(pt 1400 -400)
+										(pt 1400 -600)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 600 -900)
-										(pt -300 -900)
-										(pt -300 -1700)
-										(pt -1200 -1700)
+										(pt 1400 -400)
+										(pt 1200 -400)
+										(pt 1200 -600)
+										(pt 300 -600)
+										(pt 300 -1200)
+										(pt -300 -1200)
 									)
 								)
 							)
 						)
 						(net N_2
-							(joined
-								(portRef D
-									(instanceRef Mn4)
-								)
-								(portRef D
-									(instanceRef Mp4)
-								)
-								(portRef S
-									(instanceRef Mn3)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 4000 -600)
-										(pt 4000 -1000)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 4000 -1000)
-										(pt 4000 -1100)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 4000 -1000)
-										(pt 2700 -1000)
-										(pt 2700 -1700)
-										(pt 2200 -1700)
-									)
-								)
-							)
-						)
-						(net N_3
-							(joined
-								(portRef D
-									(instanceRef Mn5)
-								)
-								(portRef D
-									(instanceRef Mp5)
-								)
-								(portRef G
-									(instanceRef Mn7)
-								)
-								(portRef G
-									(instanceRef Mp6)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 300 -3400)
-										(pt 300 -3500)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 300 -3500)
-										(pt 300 -3800)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 2100 -3000)
-										(pt 1500 -3000)
-										(pt 1500 -3500)
-										(pt 300 -3500)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 4200 -4100)
-										(pt 3800 -4100)
-										(pt 3800 -2700)
-										(pt 2100 -2700)
-										(pt 2100 -3000)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 2100 -3000)
-										(pt 2100 -3100)
-									)
-								)
-							)
-						)
-						(net N_4
-							(joined
-								(portRef S
-									(instanceRef Mp6)
-								)
-							)
-						)
-						(net N_5
-							(joined
-								(portRef D
-									(instanceRef Mn7)
-								)
-								(portRef D
-									(instanceRef Mp7)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 4600 -3400)
-										(pt 4600 -3800)
-									)
-								)
-							)
-						)
-						(net N_6
 							(joined
 								(portRef D
 									(instanceRef Mn1)
@@ -834,19 +643,7 @@
 									(instanceRef Mn4)
 								)
 								(portRef G
-									(instanceRef Mn5)
-								)
-								(portRef G
-									(instanceRef Mn6)
-								)
-								(portRef G
 									(instanceRef Mp4)
-								)
-								(portRef G
-									(instanceRef Mp5)
-								)
-								(portRef G
-									(instanceRef Mp7)
 								)
 								(portRef S
 									(instanceRef Mp3)
@@ -855,127 +652,120 @@
 							(figure wire
 								(path
 									(pointList
-										(pt -1200 -600)
-										(pt -1200 -700)
+										(pt -300 -100)
+										(pt -300 -300)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 3600 -300)
-										(pt 3600 -700)
+										(pt 5200 200)
+										(pt 5200 -300)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt -100 -3100)
-										(pt -100 -3300)
+										(pt 5200 200)
+										(pt 5200 500)
+										(pt 3400 500)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt -1200 -700)
-										(pt -600 -700)
+										(pt -300 -300)
+										(pt 5200 -300)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt -1200 -700)
-										(pt -1200 -1100)
+										(pt -300 -300)
+										(pt -300 -600)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 3600 -700)
-										(pt 3600 -1400)
+										(pt 5200 -300)
+										(pt 5200 -900)
+									)
+								)
+							)
+						)
+						(net N_3
+							(joined
+								(portRef D
+									(instanceRef Mn4)
+								)
+								(portRef D
+									(instanceRef Mp4)
+								)
+								(portRef G
+									(instanceRef Mn5)
+								)
+								(portRef G
+									(instanceRef Mp5)
+								)
+								(portRef S
+									(instanceRef Mn3)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 5600 -100)
+										(pt 5600 -500)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt -100 -3300)
-										(pt -100 -3700)
+										(pt 2200 -2000)
+										(pt 2200 -3100)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt -600 -700)
-										(pt 3300 -700)
+										(pt 5600 -500)
+										(pt 5600 -600)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt -100 -3300)
-										(pt -600 -3300)
-										(pt -600 -700)
+										(pt 5600 -500)
+										(pt 4500 -500)
+										(pt 4500 -1200)
+										(pt 3800 -1200)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 4200 -3100)
-										(pt 3400 -3100)
-										(pt 3400 -4500)
-										(pt 2100 -4500)
-										(pt 2100 -4400)
+										(pt 3800 -1200)
+										(pt 3800 -1600)
+										(pt 2200 -1600)
+										(pt 2200 -2000)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 2100 -4400)
-										(pt 1600 -4400)
-										(pt 1600 -3700)
-										(pt -100 -3700)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt -100 -3700)
-										(pt -100 -4100)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 2100 -4400)
-										(pt 2100 -4100)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 3300 -700)
-										(pt 3600 -700)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 3300 -700)
-										(pt 3300 0)
-										(pt 2200 0)
+										(pt 3800 -1200)
+										(pt 3400 -1200)
 									)
 								)
 							)
@@ -988,9 +778,6 @@
 								(portRef S
 									(instanceRef Mp4)
 								)
-								(portRef S
-									(instanceRef Mp5)
-								)
 								(portRef Vdd
 									(instanceRef Vdd1)
 								)
@@ -998,44 +785,93 @@
 							(figure wire
 								(path
 									(pointList
-										(pt 1200 400)
-										(pt 1200 -2500)
-										(pt 300 -2500)
-										(pt 300 -2800)
+										(pt 1400 500)
+										(pt 1400 800)
+										(pt 3600 800)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 4000 0)
-										(pt 4000 400)
-										(pt 2000 400)
+										(pt 3600 1100)
+										(pt 3600 800)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 1200 400)
-										(pt 600 400)
-										(pt 600 0)
+										(pt 3600 800)
+										(pt 5600 800)
+										(pt 5600 500)
+									)
+								)
+							)
+						)
+						(net ain
+							(joined
+								(portRef ain)
+								(portRef G
+									(instanceRef Mn2)
+								)
+								(portRef G
+									(instanceRef Mp2)
+								)
+								(portRef S
+									(instanceRef Mn5)
+								)
+								(portRef S
+									(instanceRef Mp1)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 1000 200)
+										(pt 1000 -100)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 2000 700)
-										(pt 2000 400)
+										(pt 1000 200)
+										(pt 1000 500)
+										(pt -300 500)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 2000 400)
-										(pt 1200 400)
+										(pt 700 -100)
+										(pt 800 -100)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 1000 -100)
+										(pt 1000 -900)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 800 -100)
+										(pt 1000 -100)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 800 -100)
+										(pt 800 -3400)
+										(pt 2600 -3400)
 									)
 								)
 							)
@@ -1053,24 +889,16 @@
 							(figure wire
 								(path
 									(pointList
-										(pt -1600 -300)
-										(pt -1600 -700)
+										(pt -700 200)
+										(pt -700 -200)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt -1600 -700)
-										(pt -1900 -700)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt -1600 -700)
-										(pt -1600 -1400)
+										(pt -700 -200)
+										(pt -700 -900)
 									)
 								)
 							)
@@ -1085,41 +913,47 @@
 									(instanceRef Mp3)
 								)
 								(portRef S
-									(instanceRef Mn6)
+									(instanceRef Mp5)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 1800 -300)
-										(pt 1800 -600)
+										(pt 3000 200)
+										(pt 3000 0)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 1800 -1400)
-										(pt 1800 -2300)
-										(pt 2900 -2300)
-										(pt 2900 -4400)
-										(pt 2500 -4400)
+										(pt 2700 0)
+										(pt 2800 0)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 1800 -600)
-										(pt 1700 -600)
+										(pt 3000 0)
+										(pt 3000 -900)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 1800 -600)
-										(pt 1800 -1400)
+										(pt 2800 0)
+										(pt 3000 0)
+									)
+								)
+							)
+							(figure wire
+								(path
+									(pointList
+										(pt 2800 0)
+										(pt 2800 -1700)
+										(pt 2600 -1700)
 									)
 								)
 							)
@@ -1137,153 +971,59 @@
 							(figure wire
 								(path
 									(pointList
-										(pt 2200 -600)
-										(pt 2200 -900)
+										(pt 3400 -100)
+										(pt 3400 -500)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 2200 -900)
-										(pt 2400 -900)
+										(pt 3600 -500)
+										(pt 3400 -500)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 2200 -900)
-										(pt 2200 -1100)
+										(pt 3400 -500)
+										(pt 3400 -600)
 									)
 								)
 							)
 						)
-						(net cout
+						(net carry
 							(joined
-								(portRef ain)
-								(portRef cout)
+								(portRef carry)
 								(portRef D
-									(instanceRef Mn6)
+									(instanceRef Mn5)
 								)
 								(portRef D
-									(instanceRef Mp6)
-								)
-								(portRef G
-									(instanceRef Mn2)
-								)
-								(portRef G
-									(instanceRef Mp2)
-								)
-								(portRef S
-									(instanceRef Mn7)
-								)
-								(portRef S
-									(instanceRef Mp1)
-								)
-								(portRef S
-									(instanceRef Mp7)
+									(instanceRef Mp5)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 200 -300)
-										(pt 200 -500)
+										(pt 2600 -2300)
+										(pt 2600 -2600)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 2500 -3400)
-										(pt 2500 -3600)
+										(pt 2800 -2600)
+										(pt 2600 -2600)
 									)
 								)
 							)
 							(figure wire
 								(path
 									(pointList
-										(pt 2500 -3600)
-										(pt 5000 -3600)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 4600 -4400)
-										(pt 5000 -4400)
-										(pt 5000 -3600)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 2500 -3600)
-										(pt 2500 -3800)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 5000 -3600)
-										(pt 5000 -2800)
-										(pt 4600 -2800)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 5000 -3600)
-										(pt 5300 -3600)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt -1200 0)
-										(pt -1200 200)
-										(pt -500 200)
-										(pt -500 -500)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt -500 -500)
-										(pt 200 -500)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt 200 -500)
-										(pt 200 -1400)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt -500 -500)
-										(pt -500 -2000)
-										(pt 4600 -2000)
-										(pt 4600 -2800)
-									)
-								)
-							)
-							(figure wire
-								(path
-									(pointList
-										(pt -600 -500)
-										(pt -500 -500)
+										(pt 2600 -2600)
+										(pt 2600 -2800)
 									)
 								)
 							)
