@@ -4,7 +4,7 @@ Network license
 Product Release ID: T-Spice Win64 16.30.20150626.02:41:53
 Copyright © 1988-2015 Mentor Graphics Corporation
 
-	Parsing "C:\Users\Hemanth\OneDrive\Desktop\NIST INTERN\10T FULL ADDER\Cell0.sp"
+	Parsing "C:\Users\Hemanth\OneDrive\Desktop\NIST INTERN\8t full adder\Cell0.sp"
 	Initializing parser from header file "C:\Program Files\Tanner EDA\Tanner Tools v16.3\tiburonda\models\VAdatabase.sp"
 	Initializing parser from header file "C:\Users\Hemanth\OneDrive\Desktop\NIST INTERN\hm\Cell0\header.sp"
 	Reading library entry "TT" from "C:\Users\Hemanth\OneDrive\Documents\Tanner EDA\Tanner Tools v16.3\Process\Generic_250nm\Generic_250nm_Tech\Generic_250nm.lib"
@@ -28,68 +28,60 @@ Start of Cell0.sp
 Loaded BSIM3v33 model library, Berkeley BSIM3 v3.3.0
 Loaded BSIM3v31 model library, Berkeley BSIM3 v3.1.0 with extensions
 Loaded BJT model library, Gummel-Poon Bipolar with extensions
-Warning : "Cell0.sp" line 30 Power supply node cout is singularly attached to V_carry, and will be terminated with a Gmin conductance
 
 General options:
          search = C:\Users\Hemanth\OneDrive\Documents\Tanner EDA\Tanner Tools v16.3\Process\Generic_250nm\Generic_250nm_Tech\ 
         threads = 1
 
  Device and node counts:
-              MOSFETs -      10
+              MOSFETs -       8
     MOSFET geometries -       2
-      Voltage sources -       5
+      Voltage sources -       4
    Subckt Definitions -       1
      Subckt Instances -       0
     Model Definitions -       6
       Computed Models -       2
-    Independent nodes -       5
-       Boundary nodes -       6
-          Total nodes -      11
-*** 1 WARNING MESSAGE GENERATED DURING SETUP
-
+    Independent nodes -       3
+       Boundary nodes -       5
+          Total nodes -       8
 
 	Opening simulation database "C:\Users\Hemanth\OneDrive\Desktop\NIST INTERN\hm\Cell0.tsim"
 
 Power Results
 
 V1 from time 0 to 8e-008
-Average power consumed -> 3.983425e-004 watts
-Max power 7.293522e-003 at time 3.0697e-008 
-Min power 1.171539e-007 at time 7.02834e-008 
+Average power consumed -> 1.865398e-006 watts
+Max power 2.338162e-003 at time 2.04575e-008 
+Min power 2.414134e-010 at time 0 
 
 v_ain from time 0 to 8e-008
-Average power consumed -> 2.194111e-005 watts
-Max power 4.848391e-003 at time 6.07096e-008 
+Average power consumed -> 1.599692e-003 watts
+Max power 7.048598e-003 at time 6.09253e-008 
 Min power 0.000000e+000 at time 0 
 
 v_bin from time 0 to 8e-008
-Average power consumed -> -3.094859e-007 watts
-Max power 7.129079e-004 at time 2.04637e-008 
+Average power consumed -> 4.303081e-004 watts
+Max power 5.221380e-003 at time 5.07409e-008 
 Min power 0.000000e+000 at time 0 
 
 v_cin from time 0 to 8e-008
-Average power consumed -> 9.976249e-006 watts
-Max power 5.616552e-003 at time 1.08203e-008 
-Min power 0.000000e+000 at time 0 
-
-v_carry from time 0 to 8e-008
-Average power consumed -> 1.556362e-011 watts
-Max power 2.500000e-011 at time 5e-010 
+Average power consumed -> 1.218394e-004 watts
+Max power 4.565985e-003 at time 2.0426e-008 
 Min power 0.000000e+000 at time 0 
 
 
 Measure information will be written to file "C:\Users\Hemanth\OneDrive\Desktop\NIST INTERN\hm\Cell0\Cell0.measure"
 
 Measurement result summary
-   delayTime       =   93.9720p      
+   delayTime       =   68.5870p      
 
 
-Parsing                      0.14 seconds
-Setup                        0.07 seconds
-DC operating point           0.02 seconds
-Transient Analysis           0.51 seconds
-Overhead                     1.12 seconds
+Parsing                      0.09 seconds
+Setup                        0.04 seconds
+DC operating point           0.03 seconds
+Transient Analysis           0.46 seconds
+Overhead                     0.36 seconds
 -----------------------------------------
-Total                        1.87 seconds
+Total                        0.99 seconds
 
-Simulation completed	with  1 Warning
+Simulation completed
